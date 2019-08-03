@@ -1,0 +1,14 @@
+.header{
+    background-color: #282c34;
+    min-width: 100vw;
+    font-size: calc(2px + 2vmin);
+    color: white;
+}
+
+.logo {
+   margin: 20%;
+}
+
+.counter{
+    font-size: 10px;
+}
