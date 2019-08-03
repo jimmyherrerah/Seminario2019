@@ -1,0 +1,29 @@
+.table td {
+    border:1px solid black;
+  }
+.table {
+    border-collapse:collapse;
+    width:25%;
+  }
+.td {
+    padding:10px;
+  }
+
+  .pull-left{
+    text-align: left;
+}
+
+.card{
+    margin: 2%;
+}
+
+.detalles{
+    margin: 5%;
+}
+.acciones{
+    margin-top: 0;
+}
+
+h3{
+    margin: 2%;
+}

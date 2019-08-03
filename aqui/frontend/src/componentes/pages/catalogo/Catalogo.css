@@ -1,0 +1,74 @@
+.pull-left{
+    text-align: left;
+}
+
+.card{
+    margin: 2%;
+}
+
+.detalles{
+    margin: 5%;
+}
+.acciones{
+    margin-top: 0;
+}
+
+h3{
+    margin: 2%;
+}
+
+@keyframes bouncing-loader {
+    to {
+        opacity: 0.1;
+        transform: translate3d(0, -16px, 0);
+    }
+}
+
+.bouncingLoader > div, .bouncingLoader:before, .bouncingLoader:after {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: #5778F3;
+    border-radius: 50%;
+    animation: bouncing-loader 0.6s infinite alternate;
+}
+
+.bouncingLoader > div, .bouncingLoader:before, .bouncingLoader:after {
+    content: " ";
+}
+
+.bouncingLoader > div {
+    margin: 0 5px;
+}
+
+.bouncingLoader > div {
+    animation-delay: 0.2s;
+}
+
+.bouncingLoader:after {
+    animation-delay: 0.4s;
+}
+
+.btn-new{
+    border-radius: 50%;
+    width: 3vw; 
+    height: 3vw;  
+
+    position: fixed;                                   
+    border: 0px;
+    top: 15%;
+    float: right;
+}
+
+@media only screen and (max-width: 980px) {
+    .btn-new{
+        border-radius: 50%;
+        width: 40px; 
+        height: 40px;  
+    
+        position: relative;                                   
+        border: 0px;
+        top: 20%;
+        float: right;
+    }
+}
