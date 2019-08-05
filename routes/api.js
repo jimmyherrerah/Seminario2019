@@ -1,11 +1,15 @@
+
+
 var express = require('express');
 var router = express.Router();
 
-function initApi(db){
-var brodephoneRoutes = require('./api/brodephone')(db);
-router.use('/brodephone',brodephoneRoutes);
+function initbrodephones(db){
+
+    var brodephonesRoutes = require('./api/brodephones')(db);
+    router.use('/brodephones', brodephonesRoutes);
 return router;
+
 
 }
 
-module.exports =initApi;
+module.exports = initbrodephones;

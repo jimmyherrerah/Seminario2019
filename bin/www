@@ -3,26 +3,23 @@
 /**
  * Module dependencies.
  */
-
-
 var mongoClient = require('mongodb').MongoClient;
-var mongoUri = 'mongodb://localhost:27017';
-var mongoDBName = 'brodePhone';
-var mongoOptions = {useNewUrlParse:true};
+ var mongoUri = 'mongodb://localhost:27017';
+ var mongoDBName = 'brodephone';
+ var mongoOptions ={useNewUrlParser:true};
 
-mongoClient.connect(mongoUri,mongoOptions,(err,conn)=>{
+ mongoClient.connect(mongoUri, mongoOptions, (err,conn)=>{
+
   if(err){
+
     console.log(err);
     process.exit(1);
-
   }
 
-
-  var db = conn.db(mongoDBName);
-
+var db = conn.db(mongoDBName);
 
 var app = require('../app')(db);
-var debug = require('debug')('proyecto1:server');
+var debug = require('debug')('brodephones:server');
 var http = require('http');
 
 /**
@@ -106,5 +103,4 @@ function onListening() {
   debug('Listening on ' + bind);
 }
 
-});//final connect
-
+});//connect final
