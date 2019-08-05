@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Not Found</h1>
+<h2>404</h2>
+<pre>NotFoundError: Not Found
+    at C:\Users\lapto\Desktop\brodephone\brodephones\app.js:37:8
+    at Layer.handle [as handle_request] (C:\Users\lapto\Desktop\brodephone\brodephones\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\lapto\Desktop\brodephone\brodephones\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\lapto\Desktop\brodephone\brodephones\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\lapto\Desktop\brodephone\brodephones\node_modules\express\lib\router\index.js:335:12)
+    at Immediate.next (C:\Users\lapto\Desktop\brodephone\brodephones\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.&lt;anonymous&gt; (C:\Users\lapto\Desktop\brodephone\brodephones\node_modules\express\lib\router\index.js:635:15)
+    at runCallback (timers.js:706:11)
+    at tryOnImmediate (timers.js:676:5)
+    at processImmediate (timers.js:658:5)</pre>
+
+  </body>
+</html>

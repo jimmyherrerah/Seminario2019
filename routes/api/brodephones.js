@@ -62,6 +62,40 @@ var newBrodephon = Object.assign(
 
 });//post
 
+router.put('/:id', (req, res, next)=>{
+    var query = {"_id":new ObjectID(req.params.id)};
+    var update = {"$inc":{"views":1, "likes":1}};
+
+brodephonesColl.updateOne(query, update, (err, rslt)=>{
+    if(err) {
+        console.log(err);
+        return res.status(404).json({"error":"Nose pudo modificar  cellular"});
+
+    }
+    return res.status(200).json(rslt);
+});
+
+});//put
+
+//...............
+
+    router.delete('/:id', (req, res, next)=>{
+    var query = {"_id":new ObjectID(req.params.id)};
+   
+ 
+brodephonesColl.removeOne(query,  (err, rslt)=>{
+    if(err){
+        console.log(err);
+        return res.status(404).json({"error":"Nose pudo eliminar  cellular"});
+
+    }
+    
+
+    return res.status(200).json(rslt);
+});
+
+});//delete
+
 return router;
 }
 
